@@ -1,0 +1,39 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "voice-car"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "talk to voice car",
+            "let's drive",
+            "talk to vac car",
+            "talk to back car",
+            "start to drive"
+          ]
+        }
+      }
+    },
+    {
+      "description": "Everything Else Intent",
+      "name": "allElse",
+      "fulfillment": {
+        "conversationName": "voice-car"
+      },
+      "intent": {
+        "name": "actions.intent.TEXT"
+      }
+    }
+  ],
+  "conversations": {
+    "voice-car": {
+      "name": "voice-car",
+      "url": "https://us-central1-voice-car.cloudfunctions.net/helloWorld"
+    }
+  }
+}

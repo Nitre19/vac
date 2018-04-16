@@ -1,4 +1,4 @@
-var socket = io.connect('http://192.168.1.131:8081', {'forceNew': true});
+var socket = io.connect('http://127.0.0.1:8081', {'forceNew': true});
 
 socket.on('command', function(data){
 	console.log(data);
@@ -6,12 +6,17 @@ socket.on('command', function(data){
 });
 
 function doAction(data){
-	var button;
+/*	var command; 
+	command = data.map(function(elem, index){
+		return ("${elem.command}");
+	}).join(" ");
+*/
+console.log(data);
 	switch(data){
 		case "about":
-			button = document.getElementById('about');
+		console.log(data);
+			var button = document.getElementById(data);
+			button.click();
 		break;
 	}
-	button.click();
-	
 }

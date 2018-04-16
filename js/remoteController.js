@@ -1,4 +1,4 @@
-var socket = io.connect('http://37.15.98.56:8081', {'forceNew': true});
+var socket = io.connect('http://192.168.1.131:8081', {'forceNew': true});
 
 socket.on('command', function(data){
 	console.log(data);

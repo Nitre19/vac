@@ -1,4 +1,4 @@
-var socket = io.connect('http://127.0.0.1:8081', {'forceNew': true});
+var socket = io.connect('https://voice-car.firebaseapp.com:8081', {'forceNew': true});
 
 socket.on('command', function(data){
 	console.log(data);
@@ -12,11 +12,5 @@ function doAction(data){
 	}).join(" ");
 */
 console.log(data);
-	switch(data){
-		case "about":
-		console.log(data);
-			var button = document.getElementById(data);
-			button.click();
-		break;
-	}
+	document.getElementById(data).click();
 }

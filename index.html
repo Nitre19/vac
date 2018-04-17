@@ -36,7 +36,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">JAX Development</a>
+        <a id="home" class="navbar-brand js-scroll-trigger" href="#page-top">JAX Development</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,16 +46,19 @@
               <a id="about" class="nav-link js-scroll-trigger" href="#aboutSection">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#vac">VAC</a>
+              <a id="vac" class="nav-link js-scroll-trigger" href="#vacSection">VAC</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#costs">Costs</a>
+              <a id="costs" class="nav-link js-scroll-trigger" href="#costsSection">Costs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#resources">Resources</a>
+              <a id="resources" class="nav-link js-scroll-trigger" href="#resourcesSection">Resources</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a id="download" class="nav-link js-scroll-trigger" href="#downloadSection">Downloads</a>
+            </li>
+            <li class="nav-item">
+              <a id="contact" class="nav-link js-scroll-trigger" href="#contactSection">Contact</a>
             </li>
           </ul>
         </div>
@@ -84,7 +87,6 @@
       </div>
     </header>
 
-
     <section id="aboutSection">
       <div class="container marketing">
         <div class="row">
@@ -111,11 +113,9 @@
         </div><!-- /.col-lg-4 -->
       </div>
       </div>
-    </section>
-    
-    
+    </section>        
 
-    <section class="bg-primary" id="vac">
+    <section class="bg-primary" id="vacSection">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
@@ -129,7 +129,7 @@
       </div>
     </section>
 
-    <section id="costs">
+    <section id="costsSection">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -172,7 +172,7 @@
       </div>
     </section>
 
-    <section class="p-0" id="resources">
+    <section class="p-0" id="resourcesSection">
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
@@ -269,14 +269,19 @@
       </div>
     </section>
 
-    <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+    <section id="downloadSection" class="bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="mb-4">Free Download!</h2>
+            <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            <a class="btn btn-light btn-xl sr-button" href="">Download Now!</a>
+          </div>
+        </div>            
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contactSection">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">

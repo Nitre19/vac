@@ -1,11 +1,9 @@
-var socket = io.connect('http://localhost:8081', {'forceNew': true});
+var socket = io.connect('https://node-jordiid96146808.codeanyapp.com/:3000', {'forceNew': true});
 
 socket.on('command', function(data){
 	console.log(data);
 	doAction(data);
 });
-
-socket.emit('a',"test");
 
 function doAction(data){
 /*	var command; 

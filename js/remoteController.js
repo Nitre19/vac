@@ -1,7 +1,7 @@
 
 function pedirAccion(){
 	setTimeout(function(){
-		var urlServer = "http://php-xvidalllicasmx738832.codeanyapp.com/?order=consultar";
+		var urlServer = "https://php-xvidalllicasmx738832.codeanyapp.com/?order=consultar";
 		conexion3=new XMLHttpRequest();
 		conexion3.onreadystatechange = procesar;
 		conexion3.open("GET", urlServer, true);
